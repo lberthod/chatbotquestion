@@ -44,7 +44,16 @@ from elevenlabs import generate, play
 from elevenlabs import set_api_key
 import pyrebase
 
-config = st.secrets["firebase"]
+config = {
+    "apiKey": "AIzaSyAZ9NNn6W2WOX3JY5-tswLX8fm9OOfH7Z0",
+  "authDomain": "chatbotsoloia.firebaseapp.com",
+  "databaseURL": "https://chatbotsoloia-default-rtdb.europe-west1.firebasedatabase.app",
+  "projectId": "chatbotsoloia",
+  "storageBucket": "chatbotsoloia.appspot.com",
+  "messagingSenderId": "305385169995",
+  "appId": "1:305385169995:web:2adb0ef70c1dd310a159ce",
+  "measurementId": "G-Y15MRTZ33Z"
+}
 engine = pyttsx4.init()
 apis = st.secrets["elevenlabs"]
 
